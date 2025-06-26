@@ -13,12 +13,16 @@ exports.getSignup = (req, res) => {
 
 //email transporter setup
 const transporter = nodeMailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-    }
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+  tls: {
+    rejectUnauthorized: false, 
+  },
 });
+// ...existing code...
 // handle user signup logic
 exports.postSignup = async (req, res) => {
     const {name, email, password, role} = req.body;

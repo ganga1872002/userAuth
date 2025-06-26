@@ -1,22 +1,23 @@
 {
   "name": "userauth",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wangyal578s/userAuth.git"
+    "url": "git+https://github.com/ganga1872002/userAuth.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Wangyal578s/userAuth/issues"
+    "url": "https://github.com/ganga1872002/userAuth/issues"
   },
-  "homepage": "https://github.com/Wangyal578s/userAuth#readme",
+  "homepage": "https://github.com/ganga1872002/userAuth#readme",
+  "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
