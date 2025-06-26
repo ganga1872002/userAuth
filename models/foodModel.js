@@ -4,7 +4,7 @@ const db = require('../config/db');
 const createFoodTable = async () => {
   try {
     await db.none(`
-      CREATE TABLE IF NOT EXISTS food(
+      CREATE TABLE IF NOT EXISTS food_items(
         id SERIAL PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         description TEXT,
